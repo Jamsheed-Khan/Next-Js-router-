@@ -1,0 +1,87 @@
+1. Nextjs has file system based routing mechanism.
+2. URL path that user can access in browser are defined by files and folder in codebase
+
+Routing:
+a. All routes must be placed inside app folder
+b. Every file that corresponds to a route to be named as page.js or page.jsx
+c. Each folder corresponds to path segment in URL
+
+
+Nested Routes:
+a. [Scenerio#1] -> /blog - /blog/first - /blog/second
+
+Dynamic Routes: 
+enclose folder name in brackets to ensure dynamic route
+a. [Scenerio#2] ->
+	product listing and details page
+
+Nested Dynamic Routes:
+
+a. [Scenerio#3] ->
+	
+/products/1  -  /products/1/reviews/2
+
+Catch all Segments
+
+a. [Scenerio#4]
+
+Documentation Site
+
+F1
+	-C1
+	-C2
+	-C3
+F2
+F3
+F4
+.
+.
+.
+Fn
+
+/docs/f1/c1
+/docs/f1/c2
+/docs/f2/c1
+
+
+20Features * 20Concepts = 400
+20Features * 1[conceptId] = 20
+1[featureId] * 1[conceptId] = 1
+
+
+expanding above using examples also
+/docs/f1/c1/example1
+/docs/f1/c1/example2
+
+
+
+NotFound Page (In root not-found.jsx)
+redirecting to notfound() import from next/navigation
+
+
+
+Private Folders (_[folderName])
+1.  A private foolder indicates that it is a private implementation
+detail and should not be considered by routing system
+
+
+Layouts:
+1. A page is UI that is unique to a route
+2. A layout is UI that is shared between mulyiple pages in app
+e.g Header - Content - Footer
+
+
+Exercise: More than one layout in Website (Auth with no header & footer, Normal Web pages with Header & Footer)
+
+
+
+Routing Meta Data:
+
+1. Static Meta Data Object
+2. Dynamic Meta Data Generate Function
+
+page meta data takes precedence over layout meta data
+
+
+
+
